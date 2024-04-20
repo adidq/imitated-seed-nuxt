@@ -15,7 +15,7 @@
         const responseData = await response.text();
         this.data = responseData;
       } catch (error) {
-        this.data = `<h1 color="orange">데이터 패칭오류!</h1><p>${error}</p>`;
+        this.data = `<h1 style="color:orange;">데이터 패칭오류!</h1><p>${error}</p>`;
       }
     }
   };
