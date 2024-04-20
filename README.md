@@ -11,7 +11,13 @@ axios: {
 },
 ```
 baseURL에 자신이 미러링할 위키의 url을 집어넣으세요.
-ex) baseURL: 'https://wiki.the-seed.xyz'
+
+ex)
+``` js
+axios: {
+    baseURL: 'https://wiki.the-seed.xyz',
+},
+```
 링크 뒤에 슬래쉬(/)가 붙으면 작동하지 않습니다.
 
 ``` bash
