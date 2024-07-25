@@ -42,5 +42,20 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  rules: [
+    {
+        test: /\.js$/,
+        exclude: [ 
+            path.resolve(__dirname, 'excluded_file_name.js') 
+        ],
+        enforce: 'post',
+        use: { 
+            loader: WebpackObfuscator.loader, 
+            options: {
+                rotateStringArray: true
+            }
+        }
+    }
+]
 }
