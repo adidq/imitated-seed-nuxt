@@ -1,5 +1,5 @@
 var WebpackObfuscator = require('webpack-obfuscator');
-const path = require('path');
+
 export default {
   router: {
     mode: 'abstract'
